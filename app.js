@@ -34,6 +34,6 @@ document.getElementById("pledgeBtn").addEventListener("click", function () {
   renderPledgeCount();
   document.getElementById("pledgeMsg").textContent =
     "You're in" + (name ? ", " + name : "") + "! One week: share a ride, cut one energy habit, " +
-    "one meatless meal. Track it in ActNow and tell us how it went at @CleanAirWalnut.";
+    "one meatless meal. Track it in AWorld and tell us how it went at @CleanAirWalnut.";
   document.getElementById("pledgeName").value = "";
 });
