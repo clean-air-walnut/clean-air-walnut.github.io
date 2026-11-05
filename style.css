@@ -62,3 +62,16 @@ button {
 button:hover { background: var(--sky-dark); }
 .calc-out { font-weight: 700; color: var(--sky-dark); min-height: 1.4em; }
 footer { background: var(--sky-dark); color: #eaf5ee; text-align: center; padding: 1.5rem 1rem; font-size: 0.9rem; }
+
+/* Campus poll */
+.poll-row { margin: 0.7rem 0; }
+.poll-btn {
+  background: #fff; color: var(--sky-dark); border: 2px solid var(--sky);
+  border-radius: 10px; padding: 0.5rem 0.9rem; font-weight: 700; width: 100%;
+  text-align: left; margin-top: 0;
+}
+.poll-btn:hover { background: #e7f4ec; }
+.poll-btn.mine { background: var(--sky); color: #fff; }
+.poll-bar { background: #e3eae3; border-radius: 999px; height: 10px; margin-top: 0.35rem; overflow: hidden; }
+.poll-bar span { display: block; height: 100%; background: var(--sky); border-radius: 999px; }
+.poll-meta { font-size: 0.85rem; color: #556; margin-top: 0.2rem; }
