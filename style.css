@@ -75,3 +75,8 @@ footer { background: var(--sky-dark); color: #eaf5ee; text-align: center; paddin
 .poll-bar { background: #e3eae3; border-radius: 999px; height: 10px; margin-top: 0.35rem; overflow: hidden; }
 .poll-bar span { display: block; height: 100%; background: var(--sky); border-radius: 999px; }
 .poll-meta { font-size: 0.85rem; color: #556; margin-top: 0.2rem; }
+
+/* Allies section */
+#allies h3 { color: var(--sky-dark); margin-top: 1.6rem; }
+#allies li { margin-bottom: 0.55rem; }
+#allies a { color: var(--sky); font-weight: 600; }
