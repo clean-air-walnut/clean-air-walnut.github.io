@@ -1,4 +1,4 @@
-// Clean Air Walnut — commute calculator + pledge counter (stored on this device only).
+// Clean Air Walnut, commute calculator + pledge counter (stored on this device only).
 
 function fmt(n) { return n.toLocaleString("en-US", { maximumFractionDigits: 1 }); }
 
@@ -10,9 +10,9 @@ document.getElementById("calcBtn").addEventListener("click", function () {
   var yearlyKg = weeklyKg * 52;
   var out = document.getElementById("calcOut");
   if (perMile === 0) {
-    out.textContent = "Zero tailpipe CO2 — that's the clear-air special. Keep it up!";
+    out.textContent = "Zero tailpipe CO2, that's the clear-air special. Keep it up!";
   } else {
-    out.textContent = "Your commute: about " + fmt(weeklyKg) + " kg of CO2 a week — roughly " +
+    out.textContent = "Your commute: about " + fmt(weeklyKg) + " kg of CO2 a week, roughly " +
       fmt(yearlyKg) + " kg a year. Switch modes or share the ride and watch it drop.";
   }
 });
@@ -40,8 +40,8 @@ document.getElementById("pledgeBtn").addEventListener("click", function () {
 
 // Weekly campus poll (demo tally stored on this device).
 var POLL_OPTIONS = [
-  "A bus pass that just works — free transit for students",
-  "More carpool matching — I'd share the ride",
+  "A bus pass that just works, free transit for students",
+  "More carpool matching, I'd share the ride",
   "Safer bike routes + secure bike parking",
   "EV / carpool priority parking near my classes",
   "Later & more frequent buses on the routes I use"
@@ -76,7 +76,7 @@ function renderPoll() {
     wrap.appendChild(row);
   });
   document.getElementById("pollTotal").textContent =
-    total ? total + " vote" + (total === 1 ? "" : "s") + " so far — tap an option to move the tally." : "No votes yet — be the first.";
+    total ? total + " vote" + (total === 1 ? "" : "s") + " so far, tap an option to move the tally." : "No votes yet, be the first.";
 }
 function vote(i) {
   var votes = loadPoll();
