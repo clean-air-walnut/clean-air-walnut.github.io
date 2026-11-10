@@ -40,11 +40,11 @@ document.getElementById("pledgeBtn").addEventListener("click", function () {
 
 // Weekly campus poll (demo tally stored on this device).
 var POLL_OPTIONS = [
-  "Make the free GoPass automatic - no sign-up or activation steps",
-  "More carpool matching, I'd share the ride",
+  "Take the bus - public transportation",
+  "Carpool matching",
   "Safer bike routes + secure bike parking",
-  "EV / carpool priority parking near my classes",
-  "Later & more frequent buses on the routes I use"
+  "EV and carpool priority parking",
+  "Later, more frequent buses"
 ];
 function loadPoll() {
   try { return JSON.parse(localStorage.getItem("caw_poll") || "null") || POLL_OPTIONS.map(function () { return 0; }); }
