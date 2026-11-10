@@ -33,14 +33,14 @@ document.getElementById("pledgeBtn").addEventListener("click", function () {
   try { localStorage.setItem("caw_pledges", JSON.stringify(pledges)); } catch (e) {}
   renderPledgeCount();
   document.getElementById("pledgeMsg").textContent =
-    "You're in" + (name ? ", " + name : "") + "! One week: share a ride, cut one energy habit, " +
-    "one meatless meal. Track it in AWorld and tell us how it went at @CleanAirWalnut.";
+    "You're in" + (name ? ", " + name : "") + "! One week, your three picks. " +
+    "Track them in AWorld and tell us how it went at @CleanAirWalnut.";
   document.getElementById("pledgeName").value = "";
 });
 
 // Weekly campus poll (demo tally stored on this device).
 var POLL_OPTIONS = [
-  "A bus pass that just works, free transit for students",
+  "Make the free GoPass automatic - no sign-up or activation steps",
   "More carpool matching, I'd share the ride",
   "Safer bike routes + secure bike parking",
   "EV / carpool priority parking near my classes",
