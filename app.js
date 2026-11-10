@@ -40,11 +40,11 @@ document.getElementById("pledgeBtn").addEventListener("click", function () {
 
 // Weekly campus poll (demo tally stored on this device).
 var POLL_OPTIONS = [
-  "Take the bus - public transportation",
-  "Carpool matching",
-  "Safer bike routes + secure bike parking",
-  "EV and carpool priority parking",
-  "Later, more frequent buses"
+  "Share a ride, carpool, bus, or bike one day",
+  "Eat one meatless meal",
+  "Cut one energy habit at home",
+  "Plant something",
+  "Take one no-drive day"
 ];
 function loadPoll() {
   try { return JSON.parse(localStorage.getItem("caw_poll") || "null") || POLL_OPTIONS.map(function () { return 0; }); }
